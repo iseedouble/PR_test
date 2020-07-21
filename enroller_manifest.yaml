@@ -28,9 +28,9 @@ tool_configurations:
           - name: scope2
             displayName: scope2
             description: POST /scopes2/v1
-          - name: scope2
-            displayName: scope2
-            description: POST /scopes2/v1
+          - name: scope3
+            displayName: scope3
+            description: POST /scopes3/v1
   source_code_management:
     - spec:
         branching_model: GITFLOW

@@ -2,23 +2,7 @@ version: 2
 application_id: '9999'
 name: My awesome app.
 description: Some description.
-environment: NON_PRODUCTION
-role_bindings:
-  administrators:
-    - john.doe@bnc.ca
-  developers:
-    - barney.stinson@bnc.ca
-  release_managers:
-    - ted.mosby@bnc.ca
-  team_leaders:
-    - marshall.eriksen@bnc.ca
 tool_configurations:
-  artifact_management:
-    - spec:
-        package_formats:
-          - DOCKER
-          - PYPI
-          - RAW
   identity_access_management:
     - spec:
         scopes:
@@ -31,18 +15,3 @@ tool_configurations:
           - name: scope3
             displayName: scope3
             description: POST /scopes3/v1
-  source_code_management:
-    - spec:
-        branching_model: GITFLOW
-metadata:
-  labels:
-    account: GIS1234C
-tool_stacks:
-  names:
-    - pe-default
-  active: pe-default
-tools_whitelist:
-  - artifact_management
-  - integration_management
-  - secret_management
-  - source_code_management

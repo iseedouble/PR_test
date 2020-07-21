@@ -1,0 +1,11 @@
+version: 3
+application_id: '1234'
+name: My awesome app 1.
+description: Some description 1.
+tool_configurations:
+  identity_access_management:
+    - spec:
+        scopes:
+          - name: zero
+            displayName: zero
+            description: POST /zero/v1

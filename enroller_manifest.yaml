@@ -15,3 +15,6 @@ tool_configurations:
           - name: scope3
             displayName: scope3
             description: POST /scopes3/v1
+          - name: scope4
+            displayName: scope4
+            description: POST /scopes4/v1

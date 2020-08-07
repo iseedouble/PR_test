@@ -24,7 +24,7 @@ pipeline {
       parallel {
         stage('Build') {
           steps {
-            echo 'Building the core application'
+            echo 'Building the core application 1'
           }
         }
 

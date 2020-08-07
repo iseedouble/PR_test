@@ -1,4 +1,23 @@
 pipeline {
+  environment {
+        HOME = "."
+        nexusDockerRegistryUrl = "docker-production.bnc.ca"
+    }
+    parameters {
+        choice(
+            name: "deploymentStage",
+            choices: "development\nstaging", 
+            description: "The deployment stage / sub-stage."
+        )
+        string(
+            name: "version",
+            description: "The component version.",
+            defaultValue: "latest"
+        )
+    }
+    options {
+        disableConcurrentBuilds()
+    }
   agent any
   stages {
     stage('Build') {
